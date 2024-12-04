@@ -11,7 +11,6 @@ To accurately implement the provided design for the **home/landing page** using 
 ## Technologies Used
 
 - **React JS**: For building the user interface.
-
 - **CSS Framework**: vanilla CSS
 - **Vercel**: For deployment.
 
