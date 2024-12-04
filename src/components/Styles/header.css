@@ -83,6 +83,7 @@
 @media (max-width: 980px) {
   .header {
     padding: 1rem 2rem;
+    flex: 1;
   }
   .logo img {
     width: 3rem;
@@ -93,11 +94,15 @@
   .header-details {
     gap: 2rem;
   }
+  .nav {
+    gap: 1rem;
+  }
   .nav a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .register-btn {
-    font-size: 1rem;
-    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
+    gap: 0;
+    padding: 0.1rem 0.6rem;
   }
 }
