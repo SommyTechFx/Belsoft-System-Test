@@ -9,3 +9,6 @@
 header {
   z-index: 1000;
 }
+body {
+  overflow-x: hidden;
+}

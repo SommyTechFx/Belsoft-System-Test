@@ -1,0 +1,129 @@
+.total-test {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 6rem;
+  gap: 5rem;
+}
+.left-test {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+}
+
+.left-test div:nth-child(2) h2 {
+  margin-bottom: 2rem;
+  width: 49.25rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.8rem */
+}
+.left-test div:nth-child(2) p {
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.35rem */
+}
+.down-test {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.down-test h1 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 3.51563rem */
+}
+.down-test p {
+  color: var(--Grays-Gray, var(--Grays-Gray, #8e8e93));
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.8rem */
+}
+.sub-div-test {
+  float: right;
+  display: flex;
+  margin-left: 15rem;
+}
+.sub-div-test img {
+  flex: 1;
+  object-fit: contain;
+
+  margin-left: 1rem;
+}
+.profile-detials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.profile-detials h1 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 2.34375rem */
+}
+.profile-detials p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.8rem */
+}
+.total-profile-detials {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 2rem;
+  flex: 1;
+  max-width: 100%;
+}
+@media (max-width: 980px) {
+  .left-test img {
+    width: 40rem;
+  }
+  .left-test {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total-test {
+    padding: 5rem 3rem;
+  }
+  .sub-div-test {
+    margin-left: 3rem;
+  }
+  .sub-div-test img {
+    width: 5rem;
+  }
+  .down-test h1 {
+    font-size: 2rem;
+  }
+  .down-test p {
+    font-size: 1rem;
+  }
+  .total-profile-detials {
+    flex-direction: column;
+  }
+}
