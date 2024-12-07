@@ -9,16 +9,6 @@ const Sponsor = () => {
           <h3>Sponsor The Next Friday</h3>
           <h1>Why Sponsor Founders Friday?</h1>
         </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
-            rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
-            dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
-            suscipit id. Maecenas ut ante quis quam lobortis consequat eu id
-            turpis. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. 
-          </p>
-        </div>
       </section>
       <section className="sponsor-up-right">
         <section className="sponsor-container">

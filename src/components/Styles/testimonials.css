@@ -6,6 +6,7 @@
 }
 .left-test {
   display: flex;
+
   justify-content: space-between;
   gap: 3rem;
   align-items: center;
@@ -13,19 +14,19 @@
 
 .left-test div:nth-child(2) h2 {
   margin-bottom: 2rem;
-  width: 49.25rem;
+
   color: #000;
   font-family: Montserrat;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 1.8rem */
+  line-height: 120%;
 }
 .left-test div:nth-child(2) p {
   margin-bottom: 2rem;
   color: #000;
   font-family: Montserrat;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 1.35rem */
@@ -39,7 +40,7 @@
   color: #000;
   text-align: center;
   font-family: Montserrat;
-  font-size: 2.8125rem;
+  font-size: clamp(2rem, 2vw, 1.25rem);
   font-style: normal;
   font-weight: 700;
   line-height: 125%; /* 3.51563rem */
@@ -75,10 +76,10 @@
   color: #000;
   text-align: center;
   font-family: Montserrat;
-  font-size: 1.875rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 2.34375rem */
+  line-height: 125%;
 }
 .profile-detials p {
   color: #000;
@@ -90,15 +91,30 @@
   line-height: 120%; /* 1.8rem */
 }
 .total-profile-detials {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 2rem;
-  flex: 1;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin: 1rem auto;
 }
+.Register-btn {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #000; /* Example background */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Register-btn:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 980px) {
   .left-test img {
     width: 40rem;
@@ -125,5 +141,42 @@
   }
   .total-profile-detials {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .left-test div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .total-test {
+    gap: 2rem;
+  }
+  .down-test {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .total-profile-detials {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .left-test img {
+    width: 100%;
+  }
+
+  .Register-btn {
+    justify-content: center;
+  }
+  .down-test h1 {
+    font-size: 1.5rem;
+  }
+  .sub-div-test {
+    width: 1rem;
   }
 }

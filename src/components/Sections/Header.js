@@ -5,10 +5,15 @@ import ArrowRight from "../../Assets/ArrowRight (1).png";
 
 const Header = () => {
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
     setIsAnimating(true);
     setTimeout(() => setIsAnimating(false), 300);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -17,7 +22,7 @@ const Header = () => {
         <img src={logo_img} alt="Logo" />
         Founder's Friday
       </div>
-      <div className="header-details">
+      <div className={`header-details ${isMenuOpen ? "open" : ""}`}>
         <nav className="nav">
           <a href="#about">Home</a>
           <a href="#about">About Us</a>
@@ -31,6 +36,9 @@ const Header = () => {
           Register <img src={ArrowRight} alt="Arrow" />
         </button>
       </div>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {isMenuOpen ? "✖" : "☰"}
+      </button>
     </header>
   );
 };

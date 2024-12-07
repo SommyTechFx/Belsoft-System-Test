@@ -29,6 +29,8 @@
 }
 .sponsor-up-left div:nth-child(1) h1 {
   color: #000;
+  align-items: center;
+  text-align: center;
   font-family: Montserrat;
   font-size: 3.4375rem;
   font-style: normal;
@@ -226,5 +228,69 @@
     display: flex;
     gap: 6rem;
     flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .form-column {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .total-sponsor {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .sponsor-container-right h1 {
+    font-size: 1.5rem;
+  }
+  .sponsor-container-right i {
+    font-size: 1rem;
+  }
+  .sponsor-container-right h6 {
+    font-size: 0.8rem;
+  }
+  .sponsor-up-left div:nth-child(1) h3 {
+    font-size: 1rem;
+  }
+  .sponsor-up-left div:nth-child(1) h1 {
+    font-size: 1rem;
+  }
+  .sponsor-up-left div:nth-child(2) p {
+    font-size: 0.8rem;
+  }
+  .sponsor-up-right section div {
+    width: 10rem;
+    height: 10rem;
+  }
+  .sponsor-up-right section div h1 {
+    font-size: 1rem;
+  }
+  .sponsor-up-right section div p {
+    font-size: 0.7rem;
+    width: 10rem;
+  }
+  .sponsor-up-right {
+    display: flex;
+    gap: 6rem;
+    flex-direction: column;
+  }
+  .total-sponsor {
+    padding: clamp(2rem, 4vw, 6rem);
+    margin-top: clamp(2rem, 5vw, 10rem);
+  }
+
+  .sponsor-up-left h1 {
+    font-size: clamp(1.5rem, 3vw, 3.5rem);
+  }
+
+  .sponsor-container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .form-column {
+    flex-direction: column;
+    gap: 1rem;
   }
 }

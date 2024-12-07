@@ -29,11 +29,11 @@ const Footer = () => {
       <hr />
       <section className="footer-social-nav">
         <div>
-          <img src={facebook} alt="" />
-          <img src={instagram} alt="" />
-          <img src={twitter} alt="" />
+          <img src={facebook} alt="Facebook" />
+          <img src={instagram} alt="Instagram" />
+          <img src={twitter} alt="Twitter" />
         </div>
-        <nav className="nav">
+        <nav className="nav nav-footer">
           <a href="#about">Home</a>
           <a href="#about">About Us</a>
           <a href="#gallery">Gallery</a>

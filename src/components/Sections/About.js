@@ -51,7 +51,10 @@ const About = () => {
             malesuada fames ac turpis egestas. 
           </p>
 
-          <button className="learn-more-btn" onClick={handleClick}>
+          <button
+            className="learn-more-btn more-btn-more"
+            onClick={handleClick}
+          >
             Learn More <FaArrowRightLong className="more-btn" />
           </button>
         </div>

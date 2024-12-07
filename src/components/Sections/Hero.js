@@ -44,7 +44,7 @@ const Hero = () => {
           just starting your journey, Founder's Friday is your launchpad for new
           ideas, valuable connections, and game-changing opportunities.
         </h2>
-        <button className="cta-btn" onClick={handleButtonClick}>
+        <button className="cta-btn " onClick={handleButtonClick}>
           Register For Our Next Event <img src={Right_Arrow} alt="" />
         </button>
         <small>Join Us for our next meetup on the 26th of July 2024</small>
