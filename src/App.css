@@ -9,6 +9,6 @@
 header {
   z-index: 1000;
 }
-body {
-  overflow-x: hidden;
+html {
+  font-size: 16px;
 }
